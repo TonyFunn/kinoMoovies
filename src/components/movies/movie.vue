@@ -59,6 +59,9 @@
           v-if="!isSearch"
         >
           <v-card-actions>
+              <v-btn @click="$router.push(`/favorite/${movie.kinopoiskId}`)">
+                Открыть
+              </v-btn>
               <v-btn
                 variant="flat"
                 color="blue"
@@ -97,8 +100,8 @@
 import { useMovieStore } from '../../store/movieStore/storeMovie'
 import { useMovieSearch } from '../../store/movieStore/SearchMovie'
 
-const movieStore = useMovieStore()
 const movieSearch = useMovieSearch()
+const movieStore = useMovieStore()
 const props = defineProps({
   movie: {
     type: Object,

@@ -9,27 +9,32 @@ const routes = [
       {
         path: '/',
         name: 'Home',
-        component: () => import('@/views/Home.vue'),
+        component: () => import('@/views/Home.vue')
       },
       {
         path: '/movies',
         name: 'movies',
-        component: () => import('@/views/ViewMovie.vue'),
+        component: () => import('@/views/ViewMovie.vue')
       },
       {
         path: '/favorite',
         name: 'favorite',
-        component: () => import('@/views/ViewFavoriteMovie.vue'),
+        component: () => import('@/views/ViewFavoriteMovie.vue')
+      },
+      {
+        path: '/favorite/:id',
+        name: 'favoriteId',
+        component: () => import('../views/FavoriteIdView.vue')
       },
       {
         path: '/posts',
         name: 'posts',
-        component: () => import('@/views/ViewPosts.vue'),
+        component: () => import('@/views/ViewPosts.vue')
       },
       {
         path: '/todo',
         name: 'todo',
-        component: () => import('@/views/ViewTodo.vue'),
+        component: () => import('@/views/ViewTodo.vue')
       }
     ]
   }

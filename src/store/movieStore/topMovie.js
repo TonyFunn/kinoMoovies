@@ -8,7 +8,7 @@ export const useMovieSearch = defineStore('_moviesearch', () => {
     movies: [],
     loader: false
   })
-  const getMovies = async (search) => {
+  const getMoviesTop = async (search) => {
     state.loader = true
     const result = await fetch(`${url}?keyword=${search}`,
       {

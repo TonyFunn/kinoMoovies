@@ -58,7 +58,7 @@
 <script setup>
 import { ref } from 'vue';
 import movie from '../components/movies/movie.vue'
-import { useMovieSearch } from "../store/movieStore/SearchMovie";
+import { useMovieSearch } from "../store/movieStore/SearchMovie"
 
 const searchMovie = useMovieSearch()
 
